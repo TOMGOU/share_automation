@@ -1,0 +1,22 @@
+{
+  "name": "share_automation",
+  "version": "1.0.0",
+  "description": "for autotion share",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TOMGOU/share_automation.git"
+  },
+  "keywords": [
+    "autotion"
+  ],
+  "author": "tommy.tang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TOMGOU/share_automation/issues"
+  },
+  "homepage": "https://github.com/TOMGOU/share_automation#readme"
+}
