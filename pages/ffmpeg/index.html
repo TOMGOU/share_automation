@@ -1,0 +1,415 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Ffmpeg · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../selenium/" />
+    
+    
+    <link rel="prev" href="../download/you-get/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    分享
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../gitbook/">
+            
+                <a href="../gitbook/">
+            
+                    
+                    Gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../pyinstaller/">
+            
+                <a href="../pyinstaller/">
+            
+                    
+                    Pyinstaller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../requirements/">
+            
+                <a href="../requirements/">
+            
+                    
+                    Requirements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../download/">
+            
+                <a href="../download/">
+            
+                    
+                    Download
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../download/you-get/">
+            
+                <a href="../download/you-get/">
+            
+                    
+                    You-get
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Ffmpeg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../selenium/">
+            
+                <a href="../selenium/">
+            
+                    
+                    Selenium
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Ffmpeg</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x89C6;&#x9891;&#x88C1;&#x526A;">&#x89C6;&#x9891;&#x88C1;&#x526A;</h1>
+<h3 id="&#x89C6;&#x9891;&#x65F6;&#x957F;&#x88C1;&#x526A;">&#x89C6;&#x9891;&#x65F6;&#x957F;&#x88C1;&#x526A;</h3>
+<pre><code>ffmpeg -ss 0 -i video.mp4 -to 00:04:09 -c copy output.mp4
+</code></pre><h3 id="&#x53BB;&#x6389;&#x539F;&#x89C6;&#x9891;&#x80CC;&#x666F;&#x97F3;&#x4E50;">&#x53BB;&#x6389;&#x539F;&#x89C6;&#x9891;&#x80CC;&#x666F;&#x97F3;&#x4E50;</h3>
+<pre><code>ffmpeg -i lbj.mp4 -c:v copy -an novoice.mp4
+</code></pre><h3 id="&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x80CC;&#x666F;&#x97F3;&#x4E50;">&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x80CC;&#x666F;&#x97F3;&#x4E50;</h3>
+<pre><code>ffmpeg -i novoice.mp4 -i 1.mp3 -t 19 -c copy voice.mp4
+</code></pre><h3 id="&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x4E2D;&#x5FC3;&#x4E3A;&#x57FA;&#x51C6;&#x88C1;&#x526A;">&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x4E2D;&#x5FC3;&#x4E3A;&#x57FA;&#x51C6;&#x88C1;&#x526A;</h3>
+<pre><code>ffmpeg -y -i copy.mp4 -vf crop=iw:ih/2:0:100 output.mp4
+</code></pre><h3 id="&#x4EE5;&#x89C6;&#x9891;&#x4E2D;&#x5FC3;&#x4E3A;&#x57FA;&#x51C6;&#x88C1;&#x526A;">&#x4EE5;&#x89C6;&#x9891;&#x4E2D;&#x5FC3;&#x4E3A;&#x57FA;&#x51C6;&#x88C1;&#x526A;</h3>
+<pre><code>ffmpeg -y -i copy.mp4 -vf crop=iw:ih/2 output.mp4
+</code></pre><h3 id="&#x7ED9;&#x89C6;&#x9891;&#x52A0;&#x8FB9;&#x6846;">&#x7ED9;&#x89C6;&#x9891;&#x52A0;&#x8FB9;&#x6846;</h3>
+<pre><code>ffmpeg -y -i copy.mp4 -vf pad=iw+60:ih+60:30:30:pink output.mp4
+</code></pre><h3 id="&#x6C34;&#x5E73;&#x7FFB;&#x8F6C;">&#x6C34;&#x5E73;&#x7FFB;&#x8F6C;</h3>
+<pre><code>ffmpeg -y -i copy.mp4 -vf hflip output.mp4
+</code></pre><h3 id="&#x5782;&#x76F4;&#x7FFB;&#x8F6C;">&#x5782;&#x76F4;&#x7FFB;&#x8F6C;</h3>
+<pre><code>ffmpeg -y -i copy.mp4 -vf vflip output.mp4
+</code></pre><h3 id="&#x6A21;&#x7CCA;&#x5904;&#x7406;">&#x6A21;&#x7CCA;&#x5904;&#x7406;</h3>
+<pre><code>ffmpeg -y -i copy.mp4 -vf boxblur=1:10:4:10 output.mp4
+</code></pre><h3 id="&#x9510;&#x5316;&#x5904;&#x7406;">&#x9510;&#x5316;&#x5904;&#x7406;</h3>
+<pre><code>ffmpeg -y -i copy.mp4 -vf unsharp sharp.mp4
+</code></pre><h3 id="&#x53BB;&#x6C34;&#x5370;">&#x53BB;&#x6C34;&#x5370;</h3>
+<pre><code>ffmpeg -y -i camera.mp4 -vf &apos;[in]delogo=x=400:y=920:w=150:h=100,delogo=x=10:y=10:w=170:h=100[out]&apos; delogo.mp4
+</code></pre><h3 id="&#x89C6;&#x9891;&#x8986;&#x76D6;&#xFF08;&#x753B;&#x4E2D;&#x753B;&#xFF09;">&#x89C6;&#x9891;&#x8986;&#x76D6;&#xFF08;&#x753B;&#x4E2D;&#x753B;&#xFF09;</h3>
+<pre><code>ffmpeg -i copy.mp4 -itsoffset 5 -i logo.mp4  -filter_complex overlay=0:0 overlay.mp4
+// &#x89C6;&#x9891;&#x7279;&#x5B9A;&#x4F4D;&#x7F6E;&#x6DFB;&#x52A0;&#x6C34;&#x5370;
+ffmpeg -i HC.mp4 -vf &quot;movie=0.jpg [watermark]; [in][watermark] overlay=100:100 [out]&quot; overlay.mp4
+// colorchannelmixer&#xFF1A;&#x4FEE;&#x6539;&#x753B;&#x4E2D;&#x753B;&#x900F;&#x660E;&#x5EA6;
+ffmpeg -y -i HC.mp4 -vf &quot;movie=wolf.png,colorchannelmixer=aa=0.5 [wm]; [in][wm]overlay=30:10[out]&quot; output.mp4
+
+ffmpeg -i origin.mp4 -i mask.mp4 -filter_complex &quot;[1:v]format=yuva444p,scale=1108x1920,rotate=PI/4,colorchannelmixer=aa=0.5[valpha];[0:v][valpha]overlay=shortest=1:x=-500:y=-500&quot;  -y overlay.mp4
+</code></pre><h3 id="&#x6DFB;&#x52A0;&#x5355;&#x884C;&#x6587;&#x5B57;">&#x6DFB;&#x52A0;&#x5355;&#x884C;&#x6587;&#x5B57;</h3>
+<pre><code>ffmpeg -y  -i  yellow.mp4  -vf  drawtext=&quot;fontfile=gb.ttf:text=&apos;&#x6162;&#x4E0B;&#x6765;&#xFF0C;&#x5728;&#x5FAE;&#x89C2;&#x4E16;&#x754C;&#x91CC;&#x770B;&#x8BD7;&#x548C;&#x8FDC;&#x65B9;&apos;:x=(w-tw)/2:y=80:fontcolor=green:fontsize=30&quot; text.mp4
+
+
+ffmpeg -y  -i  yellow.mp4  -vf  drawtext=&quot;fontfile=gb.ttf:text=&apos;&#x4E00;&#x4E2A;&#x76F8;&#x673A;&#x5206;&#x9694;&#x51FA;&#x4E24;&#x4E2A;&#x4E16;&#x754C;&#xFF0C;&#x95E8;&#x5916;&#x662F;&#x7E41;&#x534E;&#x7684;&#x73B0;&#x4EE3;&#x90FD;&#x5E02;&#xFF0C;&#x95E8;&#x91CC;&#x662F;&#x5E7D;&#x9759;&#x5982;&#x753B;&#x7684;&#x300E;&#x4E16;&#x5916;&#x6843;&#x6E90;&#x300F;&apos;:x=(w-tw)/2:y=h-100:fontcolor=green:fontsize=30&quot; text.mp4
+</code></pre><h3 id="&#x6DFB;&#x52A0;&#x591A;&#x884C;&#x6587;&#x5B57;">&#x6DFB;&#x52A0;&#x591A;&#x884C;&#x6587;&#x5B57;</h3>
+<pre><code>ffmpeg -y  -i  yellow.mp4  -vf [in]drawtext=&quot;fontfile=gb.ttf:text=&apos;&#x6162;&#x4E0B;&#x6765;&#xFF0C;&#x5728;&#x5FAE;&#x89C2;&#x4E16;&#x754C;&#x91CC;&#x770B;&#x8BD7;&#x548C;&#x8FDC;&#x65B9;&apos;:x=(w-tw)/2:y=80:fontcolor=red:fontsize=30&quot;,drawtext=&quot;fontfile=gb.ttf:text=&apos;&#x4E00;&#x4E2A;&#x76F8;&#x673A;&#x5206;&#x9694;&#x51FA;&#x4E24;&#x4E2A;&#x4E16;&#x754C;&#xFF0C;&apos;:x=(w-tw)/2:y=h-150:fontcolor=green:fontsize=30&quot;,drawtext=&quot;fontfile=gb.ttf:text=&apos;&#x95E8;&#x5916;&#x662F;&#x7E41;&#x534E;&#x7684;&#x73B0;&#x4EE3;&#x90FD;&#x5E02;,&apos;:x=(w-tw)/2:y=h-100:fontcolor=green:fontsize=30&quot;,drawtext=&quot;fontfile=gb.ttf:text=&apos;&#x95E8;&#x91CC;&#x662F;&#x5E7D;&#x9759;&#x5982;&#x753B;&#x7684;&#x300E;&#x4E16;&#x5916;&#x6843;&#x6E90;&#x300F;&apos;:x=(w-tw)/2:y=h-50:fontcolor=green:fontsize=30&quot;[out] text.mp4
+
+text1 = &apos;drawtext=&quot;fontfile=gb.ttf:text=&#x6162;&#x4E0B;&#x6765;&#xFF0C;&#x5728;&#x5FAE;&#x89C2;&#x4E16;&#x754C;&#x91CC;&#x770B;&#x8BD7;&#x548C;&#x8FDC;&#x65B9;:x=(w-tw)/2:y=h-150:fontcolor=red:fontsize=30&quot;&apos;
+text2 = &apos;drawtext=&quot;fontfile=gb.ttf:text=&#x4E00;&#x4E2A;&#x76F8;&#x673A;&#x5206;&#x9694;&#x51FA;&#x4E24;&#x4E2A;&#x4E16;&#x754C;:x=(w-tw)/2:y=30:fontcolor=green:fontsize=30&quot;&apos;
+text3 = &apos;drawtext=&quot;fontfile=gb.ttf:text=&#x95E8;&#x5916;&#x662F;&#x7E41;&#x534E;&#x7684;&#x73B0;&#x4EE3;&#x90FD;&#x5E02;:x=(w-tw)/2:y=80:fontcolor=green:fontsize=30&quot;&apos;
+text4 = &apos;drawtext=&quot;fontfile=gb.ttf:text=&#x95E8;&#x91CC;&#x662F;&#x5E7D;&#x9759;&#x5982;&#x753B;&#x7684;&#x4E16;&#x5916;&#x6843;&#x6E90;:x=(w-tw)/2:y=130:fontcolor=green:fontsize=30&quot;&apos;
+cmdStr = f&apos;ffmpeg -y  -i  pad.mp4  -vf [in]{ text1 },{ text2 },{ text3 },{ text4 }[out] text.mp4&apos;
+os.popen(cmdStr)
+</code></pre><h3 id="&#x52A0;&#x901F;&#x89C6;&#x9891;&#x548C;&#x97F3;&#x9891;">&#x52A0;&#x901F;&#x89C6;&#x9891;&#x548C;&#x97F3;&#x9891;</h3>
+<pre><code>// &#x52A0;&#x901F;&#x89C6;&#x9891;&#xFF08;&#x4F1A;&#x4E22;&#x5E27;&#xFF09;
+ffmpeg -i input.mkv -filter:v &quot;setpts=0.5*PTS&quot; output.mkv
+// &#x56DB;&#x500D;&#x97F3;&#x9891;
+ffmpeg -i input.mkv -filter:a &quot;atempo=2.0,atempo=2.0&quot; -vn output.mkv
+// &#x540C;&#x65F6;&#x52A0;&#x901F;&#x89C6;&#x9891;&#x548C;&#x97F3;&#x9891;
+ffmpeg -i HC.mp4 -filter_complex &quot;[0:v]setpts=0.5*PTS[v];[0:a]atempo=2.0[a]&quot; -map &quot;[v]&quot; -map &quot;[a]&quot; output.mp4
+</code></pre><h3 id="eq-&#x8C03;&#x6574;&#x89C6;&#x9891;&#x4EAE;&#x5EA6;&#x5BF9;&#x6BD4;&#x5EA6;&#x9971;&#x548C;&#x5EA6;">eq: &#x8C03;&#x6574;&#x89C6;&#x9891;&#x4EAE;&#x5EA6;/&#x5BF9;&#x6BD4;&#x5EA6;/&#x9971;&#x548C;&#x5EA6;</h3>
+<pre><code>ffmpeg -i HC.mp4 -vf eq=contrast=1:brightness=0:saturation=3 output.mp4
+
+// ontrast
+&#x8BBE;&#x7F6E;contrast&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x503C;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;-2.0-2.0&#x95F4;&#x7684;&#x6D6E;&#x70B9;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0
+// brightness
+&#x8BBE;&#x7F6E;brightness&#x8868;&#x8FBE;&#x5F0F;.&#x503C;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;-1.0-1.0&#x95F4;&#x7684;&#x6D6E;&#x70B9;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0
+// saturation
+&#x8BBE;&#x7F6E;saturation&#x8868;&#x8FBE;&#x5F0F;. &#x503C;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;0-3.0&#x95F4;&#x7684;&#x6D6E;&#x70B9;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;1
+</code></pre><h3 id="hue-&#x8C03;&#x6574;&#x89C6;&#x9891;&#x8272;&#x8C03;&#x3001;&#x9971;&#x548C;&#x5EA6;&#x3001;&#x4EAE;&#x5EA6;">hue: &#x8C03;&#x6574;&#x89C6;&#x9891;&#x8272;&#x8C03;&#x3001;&#x9971;&#x548C;&#x5EA6;&#x3001;&#x4EAE;&#x5EA6;</h3>
+<pre><code>ffmpeg -y -i HC.mp4 -vf hue=b=1:s=5:h=180 output.mp4
+
+// h:&#x8272;&#x8C03;&#x89D2;&#x5EA6;&#x5EA6;&#x6570;&#xFF08;0&#x5230;360&#xFF09;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;0
+// s:&#x9971;&#x548C;&#x5EA6;&#xFF08;-10&#x5230;10&#xFF09;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;1
+// b:&#x4EAE;&#x5EA6;&#xFF08;-10&#x5230;10&#xFF09;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;0
+</code></pre><h3 id="colorbalance-&#x989C;&#x8272;&#x5E73;&#x8861;&#xFF0C;&#x8C03;&#x6574;rgb&#x503C;&#x7684;&#x6743;&#x91CD;">colorbalance: &#x989C;&#x8272;&#x5E73;&#x8861;&#xFF0C;&#x8C03;&#x6574;RGB&#x503C;&#x7684;&#x6743;&#x91CD;</h3>
+<pre><code>ffmpeg -y -i HC.mp4 -vf colorbalance=rh=0:rs=0:rm=0 output.mp4
+
+// rs&#x3001;gs&#x3001;bs:&#x8C03;&#x6574;&#x7EA2;&#x8272;&#xFF0C;&#x7EFF;&#x8272;&#x548C;&#x84DD;&#x8272;&#x9634;&#x5F71;&#xFF08;&#x6700;&#x6697;&#x7684;&#x50CF;&#x7D20;&#xFF09;&#xFF08;&#x8303;&#x56F4;&#xFF1A;-1&#x5230;1&#xFF09;
+// rm&#x3001;gm&#x3001;bm:&#x8C03;&#x6574;&#x7EA2;&#x8272;&#xFF0C;&#x7EFF;&#x8272;&#x548C;&#x84DD;&#x8272;&#x4E2D;&#x95F4;&#x8272;&#xFF08;&#x4E2D;&#x7B49;&#x50CF;&#x7D20;&#xFF09;&#xFF08;&#x8303;&#x56F4;&#xFF1A;-1&#x5230;1&#xFF09;
+// rh&#x3001;gh&#x3001;bh:&#x8C03;&#x6574;&#x7EA2;&#x8272;&#xFF0C;&#x7EFF;&#x8272;&#x548C;&#x84DD;&#x8272;&#x7684;&#x4EAE;&#x70B9;&#xFF08;&#x6700;&#x4EAE;&#x7684;&#x50CF;&#x7D20;&#xFF09;&#xFF08;&#x8303;&#x56F4;&#xFF1A;-1&#x5230;1&#xFF09;
+</code></pre><h3 id="&#x62BD;&#x53D6;&#x5236;&#x5B9A;&#x65F6;&#x95F4;&#x7684;&#x5E27;">&#x62BD;&#x53D6;&#x5236;&#x5B9A;&#x65F6;&#x95F4;&#x7684;&#x5E27;</h3>
+<pre><code>ffmpeg -ss 00:00:30 -i 666051400.mp4 -vframes 1 0.jpg
+</code></pre><h3 id="&#x753B;&#x7F51;&#x683C;">&#x753B;&#x7F51;&#x683C;</h3>
+<pre><code>ffmpeg -i HC.mp4 -vf drawgrid=w=iw/3:h=ih/3:t=2:c=white@0.5 output.mp4
+</code></pre><h3 id="&#x6EE4;&#x955C;&#x6DF7;&#x5408;&#x4F7F;&#x7528;">&#x6EE4;&#x955C;&#x6DF7;&#x5408;&#x4F7F;&#x7528;</h3>
+<pre><code>ffmpeg -y -i HC.mp4 -filter:v &quot;setpts=1.01*PTS&quot; -filter:a &quot;atempo=0.99&quot; -vf &quot;movie=timer.mp4,format=yuva444p,scale=213:120,rotate=PI/6,colorchannelmixer=aa=0.1 [wm]; [in][wm]overlay=shortest=1:x=(W-w)/2:y=(H-h)/2,hflip,eq=contrast=1:brightness=0:saturation=3,unsharp,vignette=PI/4&quot; -shortest output.mp4
+// c=none&#x53BB;&#x65CB;&#x8F6C;&#x9ED1;&#x8272;&#x80CC;&#x666F;
+ffmpeg -y -re -i origin.mp4 -re -i timer.mp4 -re -i timer.mp4 -re -i timer.mp4 -re -i timer.mp4 -re -i mask.mp4 -filter_complex &quot;[0:v] format=rgb24,setpts=PTS-STARTPTS,scale=664x1180 [base];[1:v] format=yuva444p,colorchannelmixer=aa=0.02,setpts=PTS-STARTPTS,scale=332x590,rotate=PI/4:c=none [upperleft]; [2:v] format=yuva444p,colorchannelmixer=aa=0.02,setpts=PTS-STARTPTS,scale=332x590,rotate=PI/3:c=none [upperright]; [3:v] format=yuva444p,colorchannelmixer=aa=0.02,setpts=PTS-STARTPTS,scale=332x590,rotate=PI/6:c=none [lowerleft]; [4:v] format=yuva444p,colorchannelmixer=aa=0.02,setpts=PTS-STARTPTS,scale=332x590 [lowerright]; [5:v] format=yuva444p,colorchannelmixer=aa=0.1,setpts=PTS-STARTPTS,scale=664x1180,rotate=PI/4:c=none [mask]; [base][upperleft] overlay=shortest=1[tmp1];[tmp1][upperright] overlay=shortest=1:x=332 [tmp2]; [tmp2][lowerleft]overlay=shortest=1:y=590 [tmp3]; [tmp3][lowerright]overlay=shortest=1:x=332:y=590 [tmp4]; [tmp4][mask]overlay=shortest=1:x=0:y=0&quot; -c:v libx264 output2.mp4
+</code></pre><h3 id="&#x83B7;&#x53D6;&#x89C6;&#x9891;&#x65F6;&#x957F;">&#x83B7;&#x53D6;&#x89C6;&#x9891;&#x65F6;&#x957F;</h3>
+<pre><code>ffmpeg -i HC.mp4 2&gt;&amp;1 | grep &apos;Duration&apos; | cut -d &apos; &apos; -f 4 | sed s/,//
+</code></pre><h3 id="&#x591A;&#x89C6;&#x9891;&#x540C;&#x5C4F;&#x5C55;&#x793A;">&#x591A;&#x89C6;&#x9891;&#x540C;&#x5C4F;&#x5C55;&#x793A;</h3>
+<pre><code>ffmpeg -y -re -i HC.mp4 -re -i HC.mp4 -re -i HC.mp4 -re -i HC.mp4 -filter_complex &quot;nullsrc=size=664x1180 [base];[0:v] setpts=PTS-STARTPTS,scale=332x590 [upperleft]; [1:v] setpts=PTS-STARTPTS,scale=332x590 [upperright]; [2:v] setpts=PTS-STARTPTS,scale=332x590 [lowerleft];[3:v] setpts=PTS-STARTPTS,scale=332x590 [lowerright]; [base][upperleft] overlay=shortest=1[tmp1];[tmp1][upperright] overlay=shortest=1:x=332 [tmp2]; [tmp2][lowerleft]overlay=shortest=1:y=590 [tmp3];[tmp3][lowerright] overlay=shortest=1:x=332:y=590&quot; -c:v libx264 output1.mp4
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../download/you-get/" class="navigation navigation-prev " aria-label="Previous page: You-get">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../selenium/" class="navigation navigation-next " aria-label="Next page: Selenium">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Ffmpeg","level":"1.6","depth":1,"next":{"title":"Selenium","level":"1.7","depth":1,"path":"pages/selenium/index.md","ref":"pages/selenium/index.md","articles":[]},"previous":{"title":"You-get","level":"1.5.1","depth":2,"path":"pages/download/you-get/index.md","ref":"pages/download/you-get/index.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pages/ffmpeg/index.md","mtime":"2021-01-19T08:13:19.234Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-19T08:13:55.604Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
